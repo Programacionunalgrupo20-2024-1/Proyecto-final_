@@ -26,3 +26,7 @@ este pierde el 100% de HP y viceversa (es decir, que si el oponente gana 4 veces
 La reina ha sido raptada por un grupo de malechores en una de sus salidas matutinas, siendo llevada a una torre alejada del reino. 
 Nuestro heroe (el jugador) tendrá la importante misión de rescatarla, pero en el camino deberá enfrentarse a una serie de oponentes 
 que intentarán frustar sus planes.  
+
+##TECNOLOGIA
+
+Python
