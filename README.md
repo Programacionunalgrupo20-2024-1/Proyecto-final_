@@ -1,23 +1,28 @@
-# Proyecto-final_n
+# **JUEGO DE ROL: GOD SAVE THE QUEEN**
 
-##METODOLOGÍA: El proyecto consta de un juego de rol que cuenta con tres niveles. 
+## METODOLOGIA
 
-En cada nivel se debe enfrentar a un enemigo que tiene una cantidad de vida (100 % de HP ). Para ganar y pasar a la siguiente ronda el jugador debe mantener una disputa de piedra, papel o tijera con su oponente y bajarle la totalidad del HP. Se gana el juego cuando se supera los tres niveles (o lo que es igual, cuando se vence  a los tres oponentes).  
+El juego consta de tres niveles en el que en cada nivel se tendrá que enfrentar a un oponente que tiene una cantidad de vida:
+En el 1er nivel el oponente tendrá 100% de HP, en el 2do nivel 125% de HP y en el último nivel el enemigo tendrá 150% de HP.
+Para pasar al siguiente nivel el jugador deberá mantener una disputa con el oponente en donde a través del juego "piedra papel 
+o tijera" podrá causar daño a su oponente y así quitarle la totalidad de su % de HP. No obstante, el jugador también podrá perder 
+% de HP y en caso tal de perderlo todo, automaticamente se acabará el juego. Cada vez que se superé un nivel el jugador recibirá 
+el 50 % de su HP inicial, necesario para poder avanzar hasta el final del juego. Se gana el juego cuando se vence a los tres 
+oponentes y se superan los niveles. 
 
+Cada ronda dependiendo de si se pierde o se empata, se pierde % de HP. Con cuatro veces que se le gane al rival, 
+este pierde el 100% de HP y viceversa (es decir, que si el oponente gana 4 veces, el jugador perderá la totalidad de su HP) 
 
-Cada ronda dependiendo de si se pierde o se empata, se pierde %de HP. Con cuatro veces que se le gane al rival, este pierde la totalidad de su vida. Mientras que el jugador tiene la posibilidad de recuperar el 50% de su vida, lo que le será útil para continuar en el juego y enfrentar a los oponentes restantes. 
-  
+### Opciones posibles en el piedra papel o tijera: 
 
-##Opciones posibles:  
+**Ganar** – No se pierde vida.  
 
+**Empatar**  – Se pierde 10% de vida. 
 
-Ganar – No se pierde vida  
+**Perder** – Se pierde 25 % de vida. 
 
-Empatar  – Se pierde 10% de vida 
+## HISTORIA
 
-Perder – Se pierde 25 % de vida. 
-
-
-##HISTORIA: Nuestro héroe debe rescatar a su esposa, la cual fue raptada por un hechicero malvado. Este, por no ver frustrados sus planes, deja a sus secuaces en el camino para que impidan el avance de nuestro héroe.
-
-##TECNOLOGIA: Python
+La reina ha sido raptada por un grupo de malechores en una de sus salidas matutinas, siendo llevada a una torre alejada del reino. 
+Nuestro heroe (el jugador) tendrá la importante misión de rescatarla, pero en el camino deberá enfrentarse a una serie de oponentes 
+que intentarán frustar sus planes.  
