@@ -1,6 +1,7 @@
 import pygame
 import sys
 import random
+from Protagonista import Prota
 
 pygame.init()
 pygame.mixer.init()
@@ -11,15 +12,18 @@ pygame.display.set_caption("God save the princess")
 Black = (0,0,0)
 White= (255,255,255)
 Green= (0,255,0)
+Blue=(0,0,255)
 
 pygame.mixer.music.load("sonido/Zoltraak.mp3")
 pygame.mixer.music.play(-1)
 
 running= True
+Prota= Prota(100,250)
 clock = pygame.time.Clock()
 musica_reproduciendo=False
 musica_inicia= False
 rectangulos_visibles= True
+rectangulos_visibles1= False
 points_visibles= False
 Color_Cambia= False
 font= pygame.font.Font(None,32)
@@ -58,6 +62,8 @@ while running:
             elif points_visibles:
                 if point1.collidepoint(event.pos):
                     points_visibles= False
+                    rectangulos_visibles1=True
+                    
             
         
 
@@ -65,6 +71,13 @@ while running:
         rectangulo3=pygame.draw.rect(screen, Black,(300,500,200,80))
         rectangulo2=pygame.draw.rect(screen, Black,(300,400,200,80))
         rectangulo1=pygame.draw.rect(screen, Black,(300,300,200,80))
+
+    if rectangulos_visibles1:
+        rectangulo4=pygame.draw.rect(screen, Blue,(0,400,800,200))
+        rectangulo3=pygame.draw.rect(screen, Black,(50,450,200,80))
+        rectangulo2=pygame.draw.rect(screen, Black,(300,450,200,80))
+        rectangulo1=pygame.draw.rect(screen, Black,(550,450,200,80))
+        Prota.dibujar(screen)
     
     if points_visibles:
         point1= pygame.draw.circle(screen, "purple", (150,150), 25)
